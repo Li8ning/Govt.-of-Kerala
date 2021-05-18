@@ -2,8 +2,8 @@
 .text-grey{
     color: #b4b4b4;
 }
-body.dark{
-    background-color: #000000;
+body{
+    color: #434343;
 }
 a:link{
     text-decoration: none;
@@ -27,6 +27,27 @@ a:link{
 .kg-p-spacing{
     margin-left: 30px;
     margin-right: 30px;
+}
+
+/* Dark Mode */
+body.dark{
+    background-color: #000000;
+    color: white;
+}
+.lang-btn.dark{
+    color: #D6E3ED;
+}
+.font-size-btn li a.dark{
+    color: #8EACD3;
+}
+.img-outer.dark:hover{
+    background: #37485F;
+}
+.label.dark{
+    background-color: #EA7A6D;
+}
+.main-title h1.dark,.main-title h4.dark{
+    color: white;
 }
 
 /* Media Queries */
@@ -331,11 +352,8 @@ header{
 .checkbox:checked + .label .ball {
 	transform: translateX(21px);
 }
-.fa-moon {
-	color: #000000;
-}
-.fa-sun {
-	color: #000000;
+.fa-moon,.fa-sun {
+	color: white;
 }
 
 
