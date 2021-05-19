@@ -170,9 +170,6 @@ header.dark{
     .lang-btn{
         margin-top: 7px;
     }
-    .kg-services div[class*='col']{
-        width: 20%;
-    }
 }
 @media (max-width:1023px) {
     .kg-p-spacing{
@@ -224,6 +221,13 @@ header.dark{
     .main-nav-menu .dropdown-menu div[class*='col']:last-child{
         border:none;
     }
+}
+@media (min-width: 992px){
+    .kg-services div[class*='col']{
+        width: 20%;
+    }
+}
+@media (max-width: 991px){
     .img-border{
         margin: 0 115px;
         padding: 15px;
