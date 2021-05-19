@@ -34,6 +34,9 @@ body.dark{
     background-color: #233348;
     color: white;
 }
+header.dark{
+    box-shadow: 0px 2px 30px -10px rgba(0, 0, 0, 0.5);
+}
 .lang-btn.dark{
     color: #D6E3ED;
 }
@@ -42,6 +45,9 @@ body.dark{
 }
 .img-outer.dark:hover,.search.dark,.footer-top.dark{
     background: #37485F;
+}
+.img-border.dark{
+    box-shadow: 0px 11px 16px -6px #000D1F;
 }
 .label.dark{
     background-color: #EA7A6D;
@@ -256,6 +262,18 @@ body.dark{
     .img-border{
         margin: 0 35px;
         padding: 15px;
+    }
+    .section-what-new #col-gov-cm{
+        padding: 100px 0px 100px 30px !important;
+    }
+    .right-sec-news{
+        padding: 0 25px !important;
+    }
+    .section-what-new #col-new-updates{
+        padding: 15px 10px !important;
+    }
+    .section-what-new #col-new-updates .blue-head{
+        margin: auto 15% !important;
     }
 }
 @media (max-width:374px){
@@ -620,17 +638,23 @@ header{
   {
     background: #FFFBF3;
     border-radius: 15px;
-    padding: 35px;
-    vertical-align: middle;
+    padding: 100px 0px 100px 80px;
+    /* vertical-align: middle; */
     margin-top: 50px;
     margin-bottom: 50px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
   }
+  .right-sec-news{
+      padding-left: 0;
+  }
   .section-what-new .image-gov-cm, .image-gov-cm + .col-lg-6{text-align: center;}
   .section-what-new .image-gov-cm img
   {
-    width:75px;height: 75px;border-radius: 50%;
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+    object-fit: cover;
   }
   .section-what-new #gov-details
   {
@@ -641,7 +665,7 @@ header{
   {
     background: #F3FAFF;
     border-radius: 15px;
-    padding: 15px;
+    padding: 15px 25px;
   }
   .section-what-new #col-new-updates .blue-head {background: #6DA4EA !important; border-radius: 20px;     margin: auto 25%;}
 
@@ -654,7 +678,7 @@ header{
 .section-what-new #col-new-updates .table-cell {
     display: table-cell;
     font-size: 10px;
-    padding: 10px;
+    padding: 7px 0;
     border-bottom: 1px solid #dee2e6;
     color: black;
 }
@@ -668,10 +692,24 @@ header{
   .section-what-new .red-arrow
   {
     background: #EA7A6D;
-    padding: 3px 12px;
+    padding: 3px 10px;
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 16px;
   }
+.govt-websites .col{
+    height: 80px;
+    position: relative;
+}
+.govt-websites .col img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
   
 /*Footer css*/
 
@@ -742,73 +780,74 @@ display: none;
 
 @media (max-width: 1023px) {
   
-  footer .col-md.col-footerlogo .list-unstyled
-  {
+    footer .col-md.col-footerlogo .list-unstyled
+    {
     display: flex !important;
-  }
-  .footer-text
-  {
+    }
+    .footer-text
+    {
     font-size: 12px;
     line-height: 1em;
-  }
-  .footer-logo {
+    }
+    .footer-logo {
     height: 50px;
     width: 50px;
-  }
-  .col-about-portal, .col-sitemap
-  {
+    }
+    .col-about-portal, .col-sitemap
+    {
     border-right: 1px solid #5D91D2 !important;
-  }
-  .section-articles .image-container
-  {
-    text-align: right !important;
-  }
-.section-articles .article-title:before
-{ 
-  width:60% !important;
-}
+    }
+    .section-articles .article-title:before
+    { 
+    width:60% !important;
+    }
+    .section-what-new #col-gov-cm{
+        margin-bottom: -50px;
+    }
+    .right-sec-news {
+        padding: 0 60px;
+    }    
+    .section-what-new #col-new-updates{
+        padding: 15px 40px;
+    }
+    .section-articles .image-container
+    {
+        margin-bottom: 25px;
+    }
 }
 @media (max-width:767px)
 {
-  .footer-top .col-md
-  {
+    .footer-top .col-md
+    {
     border: none;
     padding: 10px 20px;
     width: 50%;
-  } 
+    } 
     .col-sitemap
-  {
+    {
     order:2 !important;
-  }
-  .col-footerlogo
-  {
+    }
+    .col-footerlogo
+    {
     order:4 !important;
-  }
-  .section-articles .image-container
-  {
-    text-align: center;
-  }
-  .section-articles .article-title:before
-{ 
-  width:100% !important;
-}
+    }
+    .section-articles .article-title:before
+    { 
+    width:100% !important;
+    }
+    .right-sec-news {
+        padding: 0 35px;
+    }    
+    .section-what-new #col-new-updates{
+        padding: 15px 15px;
+    }
 }
 
 @media (max-width: 576px)
 {
-  .section-articles .image-container
-  {
-    text-align: center !important;
-    margin-bottom: 25px;
-  }
   #article-current, #article-current .article-schema{
     text-align: center !important;
   }
-  .section-what-new #col-gov-cm
-  {
-    margin-bottom: 0px !important;
-  }
-
 }
 
 @media (max-width: 992px)
@@ -822,10 +861,6 @@ display: none;
 
 @media (min-width: 992px)
 {
- .section-articles .image-container
-  {
-    text-align: right !important;
-  }
   .section-articles .article-title:before
 { 
   width:75% !important;
