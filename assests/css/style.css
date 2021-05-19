@@ -21,6 +21,9 @@ a:link{
 .kg-t-font{
     font-size: 0.8rem;
 }
+.kg-f-font{
+    font-size: 0.7rem;
+}
 .kg-primary-color{
     color: #2E2D7F;
 }
@@ -28,6 +31,9 @@ a:link{
     margin-left: 30px;
     margin-right: 30px;
 }
+
+/* Icons Font Size */
+
 
 /* Dark Mode */
 body.dark{
@@ -105,7 +111,7 @@ header.dark{
 }
 @media (max-width: 1366px){
     .kg-t-font {
-        font-size: 0.7rem !important;
+        font-size: 0.7rem;
     }
     .font-size-btn li a{
         padding: 2px !important;
@@ -183,10 +189,10 @@ header.dark{
         display: none;
     }
     .kg-p-font {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
     }
     .kg-s-font {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
     }
     .main-title img {
         margin-right: 9px !important;
@@ -295,10 +301,10 @@ header.dark{
         margin-left: 20px;
     }
     .kg-p-font{
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
     }
     .kg-s-font{
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
     }
     .main-nav div.col-8,.main-nav div.col-4{
         width: 50%;
@@ -384,7 +390,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 8px;
+	padding: 0 6px;
 	position: relative;
 	height: 23px;
 	width: 48px;
@@ -394,7 +400,7 @@ header{
 	border-radius: 50%;
     border: 1px solid #EDEDED;
 	position: absolute;
-	top: 4px;
+	top: 3px;
 	left: 5px;
 	height: 14px;
 	width: 14px;
@@ -536,7 +542,7 @@ header{
 }
 .main-nav-menu .dropdown-menu .dropdown-item{
     font-weight: 400;
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
 }
 .main-nav-menu .dropdown-menu .dropdown-item:hover{
     background: #E1E9FF;
@@ -677,7 +683,7 @@ header{
 }
 .section-what-new #col-new-updates .table-cell {
     display: table-cell;
-    font-size: 10px;
+    /* font-size: 10px; */
     padding: 7px 0;
     border-bottom: 1px solid #dee2e6;
     color: black;
