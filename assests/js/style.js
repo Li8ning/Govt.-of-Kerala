@@ -4,15 +4,6 @@ function dark_mode(class_name){
 	});
 }
 
-function inc_font(font_class_collection){
-	font_class_collection.forEach(element => {
-		var curr_size = parseInt($(element).css('font-size'));
-		curr_size += 2;
-		console.log(curr_size);
-		$(element).css('font-size',curr_size+'px');
-	});
-}
-
 
 $(document).ready(function(){
 	var $font_ele_collection = $("body,.kg-p-font,.kg-s-font,.kg-t-font,.kg-f-font");
