@@ -1015,6 +1015,7 @@ footer .fixed-icons .btn {
     .page-update .footer-text {
         line-height: 20px;
     }
+    .section-what-new{margin-top:100px;}
 }
 
 @media (max-width:767px) {
