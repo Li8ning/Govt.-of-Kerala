@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,548 +12,685 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/djc7ruy.css">
     <script src="https://kit.fontawesome.com/208eb39700.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Government of Kerala</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script src="./assests/js/style.js"></script>
 </head>
-<body>
-    
 
+<body class="font-mulish-normal">
+
+    <!-- Header -->
+    <header>
+        <!-- Top Bar -->
+        <div class="row top-bar kg-p-spacing align-items-center justify-content-start">
+            <div class="col align-items-start social-col">
+                <div class="social-btn d-sm-block d-md-block d-lg-none border-0">
+                    <button class="btn fb-btn" href="#" role="button">
+            <i class="fa fa-facebook"></i></button>
+                    <button class="btn twitter-btn" href="#" role="button"><i class="fa fa-twitter"></i></button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-10 align-items-end site-func-col w-auto">
+                <ul class="nav kg-t-font justify-content-end">
+                    <li class="nav-item d-none d-sm-none d-lg-block">
+                        <a class="nav-link text-grey font-mulish-normal skip-btn" aria-current="page" href="#main-content">Skip to Main Content</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang-btn rounded-pill mx-1" aria-current="page" href="#">മലയാളം</a>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="nav-link list-group list-group-horizontal font-size-btn font-mulish-normal">
+                            <li class="list-group-item"><a id="kg-decrease-font" class="btn disabled rounded-circle mx-1" aria-current="page" href="#">A-</a></li>
+                            <li class="list-group-item"><a id="kg-default-font" class="btn rounded-circle active mx-1" aria-current="page" href="#">A</a></li>
+                            <li class="list-group-item"><a id="kg-increase-font" class="btn rounded-circle mx-1" aria-current="page" href="#">A+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <form class="nav-link d-flex">
+                            <input type="checkbox" class="checkbox" id="chk" />
+                            <label class="label" for="chk">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>                    
+                    <div class="ball"></div>
+                </label>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Top Bar End-->
+
+        <!-- Main Navbar -->
+        <div class="row kg-p-spacing main-nav mt-4 font-mulish-normal align-middle h-100">
+            <div class="col-6 col-lg-4 logo-col">
+                <a href="index.html" class="main-title mb-3 mb-lg-0 me-lg-auto">
+                    <img src="./assests/svg/kg logo.svg" alt="Government of Kerala" class="light-img img-fluid">
+                    <img src="./assests/svg/kg logo white.svg" alt="Government of Kerala" class="dark-img img-fluid d-none">
+                </a>
+            </div>
+            <div class="col-6 col-lg-8 double-header auth-col">
+                <div class="row">
+                    <nav>
+                        <div class="d-flex justify-content-end kg-t-font align-items-center">
+                            <form class="d-lg-block d-none">
+                                <div class="search"> <input class="search_input" type="text" placeholder="Search"> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
+                            </form>
+                            <button class="btn sign_in-btn auth-btn kg-t-font" href="#" role="button">Sign in</button>
+                            <button class="btn register-btn auth-btn kg-t-font" href="#" role="button">Register</button>
+                            <div class="social-btn d-none d-lg-block">
+                                <button class="btn fb-btn" href="#" role="button">
+                  <i class="fa fa-facebook"></i></button>
+                                <button class="btn twitter-btn" href="#" role="button"><i class="fa fa-twitter"></i></button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row d-lg-block d-sm-none float-end mt-2">
+                    <nav class="navbar main-nav-menu navbar-expand-lg">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 kg-t-font">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle py-2 px-2" href="#" id="about-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Kerala
+                    </a>
+                                    <div class="dropdown-menu kg-f-font" aria-labelledby="about-dropdown">
+                                        <div class="row align-items-start">
+                                            <div class="col">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="#">State</a></li>
+                                                    <li><a class="dropdown-item" href="#">District</a></li>
+                                                    <li><a class="dropdown-item" href="#">History</a></li>
+                                                    <li><a class="dropdown-item" href="#">Economy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="#">Elections</a></li>
+                                                    <li><a class="dropdown-item" href="#">Judiciary</a></li>
+                                                    <li><a class="dropdown-item" href="#">Census 2011</a></li>
+                                                    <li><a class="dropdown-item" href="#">Literature</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="#">Tourism</a></li>
+                                                    <li><a class="dropdown-item" href="#">Festivals</a></li>
+                                                    <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                                                    <li><a class="dropdown-item" href="#">Recreation</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-2" href="#">Government</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-2" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-2" href="#">Flagship Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-2" href="#">Documents</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-2" href="#">Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-2" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-12 d-lg-none d-md-block mobile-nav-menu mt-2">
+                <nav class="navbar main-nav-menu navbar-expand-lg">
+                    <form class="d-sm-block d-lg-none">
+                        <div class="search"> <input class="search_input" type="text" placeholder="Search"> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
+                    </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-auto-close="outside" data-bs-target="#navhamburger" aria-controls="navhamburger" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><img src="./assests/svg/nav-toggle.svg" alt="navbar toggle"/></span>
+            </button>
+                    <div class="collapse navbar-collapse" id="navhamburger">
+                        <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 kg-t-font">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="about-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About Kerala
+                  </a>
+                                <div class="dropdown-menu" aria-labelledby="about-dropdown">
+                                    <div class="row align-items-start">
+                                        <div class="col-sm-6 col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">State</a></li>
+                                                <li><a class="dropdown-item" href="#">District</a></li>
+                                                <li><a class="dropdown-item" href="#">History</a></li>
+                                                <li><a class="dropdown-item" href="#">Economy</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Elections</a></li>
+                                                <li><a class="dropdown-item" href="#">Judiciary</a></li>
+                                                <li><a class="dropdown-item" href="#">Census 2011</a></li>
+                                                <li><a class="dropdown-item" href="#">Literature</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Tourism</a></li>
+                                                <li><a class="dropdown-item" href="#">Festivals</a></li>
+                                                <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                                                <li><a class="dropdown-item" href="#">Recreation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Government</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Flagship Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Documents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Main Navbar End-->
+    </header>
+    <!-- Header End -->
+
+    <!-- 1st Alert Section -->
+    <div class="container first-alert my-4">
+        <div class="kg-alert alert d-flex align-items-center py-2 px-5" role="alert">
+            <img src="./assests/svg/kg-alert-icon.svg" alt="KG Alert Icon">
+            <div class="ms-3 text-center font-mulish-normal w-100">
+                This is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message
+            </div>
+        </div>
+    </div>
+    <!-- 1st Alert Section End-->
+
+    <!-- Slider -->
+    <div id="kg-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#kg-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#kg-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#kg-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assests/img/slide-1.png" class="d-block w-100" alt="slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./assests/img/slide-2.jpg" class="d-block w-100" alt="slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./assests/img/slide-1.png" class="d-block w-100" alt="slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#kg-carousel" data-bs-slide="prev">
+      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+      <i class="fas fa-chevron-left"></i>
+      <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#kg-carousel" data-bs-slide="next">
+      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+      <i class="fas fa-chevron-right"></i>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <!-- Slider End -->
+
+    <!-- 2nd Alert Section -->
+    <div class="container second-alert my-5 font-mulish-normal" id="main-content">
+        <div class="kg-alert alert d-flex align-items-center py-2 px-5" role="alert">
+            <img src="./assests/svg/kg-alert-icon.svg" alt="KG Alert Icon">
+            <div class="ms-4">
+                <h4 class="fw-bold">This is a sample alert message This is a sample alert message</h4>
+                This is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message This
+                is a sample alert message This is a sample alert message This is a sample alert message This is a sample alert message
+            </div>
+        </div>
+    </div>
+    <!-- 2nd Alert Section End-->
+
+    <!-- Services -->
+    <div class="container kg-services">
+        <div class="row justify-content-center font-mulish-normal">
+            <div class="col-6 col-lg-2">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/multiple-users-silhouette.svg" class="card-img-top" height="40px" width="43px" alt="Client Services">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Citizen Services</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/poster.svg" class="card-img-top" height="40px" width="43px" alt="Noticeboard">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Noticeboard</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/file.svg" class="card-img-top" height="40px" width="43px" alt="Document Repository">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Document Repository</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/market-fluctuation.svg" class="card-img-top" height="40px" width="43px" alt="...">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Dashboard</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/image-gallery.svg" class="card-img-top" height="40px" width="43px" alt="Media">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Media</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/open-computer-folder.svg" class="card-img-top" height="40px" width="43px" alt="Open Data">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Open Data</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/chat.svg" class="card-img-top" height="40px" width="43px" alt="Grievance Redressal">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Grievance Redressal</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4">
+                <div class="img-outer">
+                    <div class="img-border rounded-circle">
+                        <img src="./assests/svg/headphones-with-microphone.svg" class="card-img-top" height="40px" width="43px" alt="Helpline">
+                    </div>
+                    <div class="img-content text-center mt-3">
+                        <h4 class="fw-bold kg-p-font">Helpline</h4>
+                        <p class="kg-f-font mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End-->
+
+    <!-- 2rd Alert Section -->
+    <div class="container third-alert mt-5 font-mulish-normal">
+        <div class="kg-alert alert text-center text-lg-start py-5 px-5" role="alert">
+            <div class="row">
+                <div class="col-12 col-lg-5 mb-3">
+                    <img class="img-fluid" src="./assests/img/3rd-alert-img.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-7">
+                    <h4 class="mb-3 fw-bold">This is a sample alert message This is a sample alert message</h4>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked updated
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3rd Alert Section End-->
 
     <!-- What is new -->
-    <div class="section-what-new">
-      <div class="container">
-       
-        <div class="row row-no-gutters justify-content-center">
-          <div class="col-sm col-md-6 col-lg-5" id="col-gov-cm">
-            <div id="gov-details" class="row">
-              <div class="col-lg-4 image-gov-cm">
-                <img src="./assests/img/governor.png">
-              </div>
-              <div class="col-lg-6">
-                <span class="font-mulish-normal">Governor</span><br>
-                <span class="head-dark font-mulish-normal fw-bold">Shri. Arif Mohammed Khan</span>
-              </div>
+    <div class="section-what-new font-mulish-normal">
+        <div class="container-lg">
+            <div class="row row-no-gutters justify-content-center">
+                <div class="col-12 col-lg-6" id="col-gov-cm">
+                    <div class="container-md">
+                        <div class="row align-items-center justify-content-center" id="gov-details">
+                            <div class="col-3 col-lg-4 image-gov-cm">
+                                <img class="img-fluid" src="./assests/img/governor.png">
+                            </div>
+                            <div class="col-6 col-lg-8 pt-2 gov-info">
+                                <span class="kg-p-font">Governor</span><br>
+                                <h3 class="head-dark fw-bold">Shri. Arif Mohammed Khan</h3>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center" id="cm-details">
+                            <div class="col-3 col-lg-4 image-gov-cm">
+                                <img class="img-fluid" src="./assests/img/cm-pinaraayi.png">
+                            </div>
+                            <div class="col-6 col-lg-8 pt-2 gov-info">
+                                <span class="kg-p-font">Chief Minister</span><br>
+                                <h3 class="head-dark fw-bold">Shri. Pinarayi Vijayan</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 right-sec-news">
+                    <div id="col-new-updates">
+                        <div class="justify-content-center blue-head">
+                            <p class="text-white text-center">What is New</p>
+                        </div>
+                        <div id="news-update-feed">
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="rowGroup">
+                                <div class="table-row">
+                                    <div class="table-cell news-title"><span class="news-date kg-ff-font text-white ">01/01/2021</span>
+                                        <span class="news-headline kg-f-font">Resilient Kerala Program (PforR)- Draft Report on ESSA(English) (Malayalam) rt on ESSA(English)(Malayalam</span></div>
+                                    <div class="table-cell"><a class="red-arrow text-white" href="#"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <center class="mt-2"><a href="#" class="text-center justify-content-center">Show All</a></center>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div id="cm-details" class="row">
-              <div class="col-lg-4 image-gov-cm">
-                <img src="./assests/img/cm-pinaraayi.png">
-              </div>
-              <div class="col-lg-6">
-                <span class="font-mulish-normal">Chief Minister</span><br>
-                <span class="head-dark font-mulish-normal fw-bold">Shri. Pinraayi Vijayan</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6 col-lg-5" id="col-new-updates">
-            
-              <div class="justify-content-center blue-head">
-                <p class="font-mulish-normal text-white text-center">What is New</p>
-              </div>
-              <div id="news-update-feed">
-                <div class="rowGroup">
-                  <div class="table-row">
-                    <div class="table-cell"><span class="news-date text-white font-mulish-normal">01/01/2021</span>
-                  <span class="news-headline font-mulish-normal">Lorem ipsum is a sample content for printing and type writing industries. Lorem ipsum content.</span></div>
-                    <div class="table-cell"><span class="red-arrow text-white"><i class="fa fa-angle-right"></i></span></div>
-                  </div>
-                </div>  
-                <div class="rowGroup">
-                  <div class="table-row">
-                    <div class="table-cell"><span class="news-date text-white font-mulish-normal">01/01/2021</span>
-                  <span class="news-headline font-mulish-normal">Lorem ipsum is a sample content for printing and type writing industries. Lorem ipsum content.</span></div>
-                    <div class="table-cell"><span class="red-arrow text-white"><i class="fa fa-angle-right"></i></span></div>
-                  </div>
-                </div>  
-                <div class="rowGroup">
-                  <div class="table-row">
-                    <div class="table-cell"><span class="news-date text-white font-mulish-normal">01/01/2021</span>
-                  <span class="news-headline font-mulish-normal">Lorem ipsum is a sample content for printing and type writing industries. Lorem ipsum content.</span></div>
-                    <div class="table-cell"><span class="red-arrow text-white"><i class="fa fa-angle-right"></i></span></div>
-                  </div>
-                </div>  
-                <div class="rowGroup">
-                  <div class="table-row">
-                    <div class="table-cell"><span class="news-date text-white font-mulish-normal">01/01/2021</span>
-                  <span class="news-headline font-mulish-normal">Lorem ipsum is a sample content for printing and type writing industries. Lorem ipsum content.</span></div>
-                    <div class="table-cell"><span class="red-arrow text-white"><i class="fa fa-angle-right"></i></span></div>
-                  </div>
-                </div>           
-                <div class="rowGroup">
-                  <div class="table-row">
-                    <div class="table-cell"><span class="news-date text-white font-mulish-normal">01/01/2021</span>
-                  <span class="news-headline font-mulish-normal">Lorem ipsum is a sample content for printing and type writing industries. Lorem ipsum content.</span></div>
-                    <div class="table-cell"><span class="red-arrow text-white"><i class="fa fa-angle-right"></i></span></div>
-                  </div>
-                </div>  
-                <div class="rowGroup">
-                  <div class="table-row">
-                    <div class="table-cell"><span class="news-date text-white font-mulish-normal">01/01/2021</span>
-                  <span class="news-headline font-mulish-normal">cccccccc Lorem ipsum is a sample content for printing and type writing industries. Lorem ipsum content.</span></div>
-                    <div class="table-cell"><span class="red-arrow text-white"><i class="fa fa-angle-right"></i></span></div>
-                  </div>
-                </div>  
-                <center><a href="#" class="text-center justify-content-center">Show All</a></center>
-              </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- End of what is new-->
 
     <!-- articles section -->
     <div class="section-articles">
-      <div class="container">
-       
-        <div class="row row-no-gutters justify-content-center">
-          <div class="col-sm col-md-6 col-lg-4 image-container"><img src="./assests/img/6008195bfb8f2ab7cfe8f09c13cd551e8bc44d68.png" /></div>
-          <div class="col-sm col-md-6 col-lg-8">
-            <div id="article-current" class="border-bottom">
-                <p class="h4 article-current-title head-dark">Lorem ipsum dolor sit amet consectiue emor adipiscin elit.</p>
-                <p class="article-schema">
-                  <span class="article-author font-mulish-normal">Author Name</span>
-                  <span>&nbsp;&nbsp;</span>
-                  <span class="article-date font-mulish-normal">01/01/2021</span>
-                </p>
-                <p class="article-content font-mulish-normal">
-                  <span>Position an element at the top of the viewport, from edge to edge, but only after you scroll past it. The .sticky-top utility uses CSS’s position: sticky, which isn’t fully supported in all browsers.</span><br><a href="#" class="article-readmore">Readmore</a></p>
+        <div class="container">
+            <div class="row row-no-gutters justify-content-center">
+                <div class="col-12 col-lg-4 image-container text-center"><img class="img-fluid w-100 h-100" src="./assests/img/img-article.jpg" /></div>
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <div id="article-current" class="border-bottom mt-4">
+                        <h1 class="article-current-title fw-bold head-dark kg-h-font">Lorem ipsum dolor sit amet consectiue emor adipiscin elit.</h1>
+                        <p class="article-schema mt-1 kg-p-font">
+                            <span class="article-author font-mulish-normal">Author Name</span>
+                            <span>&nbsp;&nbsp;</span>
+                            <span class="article-date font-mulish-normal">01/01/2021</span>
+                        </p>
+                        <p class="article-content font-mulish-normal">
+                            <span>Position an element at the top of the viewport, from edge to edge, but only after you scroll past it. The .sticky-top utility uses CSS’s position: sticky, which isn’t fully supported in all browsers.</span></p>
+                        <p class="mt-1"><a href="#" class="article-readmore fw-bold">Read More</a></p>
+                    </div>
+                    <div id="article-recent">
+                        <p class="mt-2 kg-p-font"><span class="font-mulish-normal">Recent Articles</span> <i class="fa fa-angle-double-right"></i></p>
+                        <a href="#">
+                            <h4 class="article-title kg-p-font head-dark font-mulish-normal fw-bold">
+                                Lorem ipsum dolor sit amet consectiue emor adipiscin
+                            </h4>
+                        </a>
+                        <a href="#">
+                            <h4 class="article-title kg-p-font head-dark font-mulish-normal fw-bold">
+                                Lorem ipsum dolor sit amet consectiue emor adipiscin
+                            </h4>
+                        </a>
+                        <a href="#">
+                            <h4 class="article-title kg-p-font head-dark font-mulish-normal fw-bold">
+                                Lorem ipsum dolor sit amet consectiue emor adipiscin
+                            </h4>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="article-recent">
-              <p><span class="font-mulish-normal">Recent Articles</span> <i class="fa fa-angle-double-right"></i></p>
-              <a href="#"><p class="article-title head-dark font-mulish-normal fw-bold">
-                Lorem ipsum dolor sit amet consectiue emor adipiscin 
-              </p></a>
-              <a href="#"><p class="article-title head-dark font-mulish-normal fw-bold">
-                Lorem ipsum dolor sit amet consectiue emor adipiscin 
-              </p></a>
-              <a href="#"><p class="article-title head-dark font-mulish-normal fw-bold">
-                Lorem ipsum dolor sit amet consectiue emor adipiscin 
-              </p></a>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- end of articles section -->
 
 
     <!-- govt logos-->
+    <div class="govt-websites">
+        <div class="text-center">
+            <div class="container">
+                <p class="font-mulish-normal head-light-grey kg-s-font">Kerala Government Websites</p>
+                <div class="row justify-content-md-center my-5">
+                    <div class="col col-lg-2">
+                        <img class="img-fluid" src="./assests/svg/PRD.svg">
+                    </div>
+                    <div class="col col-lg-2 offset-lg-1">
+                        <img class="img-fluid" src="./assests/svg/liveprd.svg">
+                    </div>
+                    <div class="col col-lg-2 offset-lg-1">
+                        <img class="img-fluid" src="./assests/svg/newskerala.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="text-center govt-websites">
-      <div class="container">
-      <p class="font-mulish-normal head-light-grey">Kerala Government Websites</p>
-      <div class="row justify-content-md-center">
-        <div class="col col-lg-2">
-          <img src="./assests/img/d7662acb0a99ad5e0f943a0ad85d11c247fa432d.png">
+        <div class="text-center">
+            <div class="container">
+                <p class="font-mulish-normal head-light-grey kg-s-font">India Government Websites</p>
+                <div class="row justify-content-md-center mt-2">
+                    <div class="col col-lg-2">
+                        <img class="img-fluid" src="./assests/svg/india-gov.svg">
+                    </div>
+                    <div class="col col-lg-2">
+                        <img class="img-fluid" src="./assests/svg/mygov-logo.svg">
+                    </div>
+                    <div class="col col-lg-2">
+                        <img class="img-fluid" src="./assests/svg/Digital_India_logo.svg">
+                    </div>
+                    <div class="col col-lg-2">
+                        <img class="img-fluid" src="./assests/svg/data-gov_0.svg">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col col-lg-2">
-          <img src="./assests/img/712fb1ff37769001f46cf98c2e182276340422d2.png">
-        </div>
-        <div class="col col-lg-2">
-          <img src="./assests/img/ef8d5c42d10015446ebff3c30d249d08076c93a4.png">
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="text-center govt-websites">
-      <div class="container">
-      <p class="font-mulish-normal head-light-grey">India Government Websites</p>
-      <div class="row justify-content-md-center">
-        <div class="col col-lg-2">
-          <img src="./assests/img/1928c1567c8356fca8cbd87e0005d14945d221c3.png">
-        </div>
-        <div class="col col-lg-2">
-          <img src="./assests/img/30cef4d3ec77ae424ef973eb2f22e08c568b8f63.png">
-        </div>
-        <div class="col col-lg-2">
-          <img src="./assests/img/c89dc47f93ed073d106cd90e3a3ead25d1f6c498.png">
-        </div>
-        <div class="col col-lg-2">
-          <img src="./assests/img/ce78b5a2b52ef930adf5986b34037ae8ecff4ce7.png">
-        </div>
-      </div>
-    </div>
     </div>
 
-<!-- End of govt logos -->
+    <!-- End of govt logos -->
 
 
     <!-- Footer-->
     <!-- Footer top blue -->
-    <footer class="">
-         <!-- Footer top -->
-        
-        <div class="footer-top">
-          <div class="container">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-md col-about-portal">
-              <h5 class="footer-text font-mulish-normal">About portal</h5>
+    <footer>
+        <!-- Footer top -->
 
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Terms of use</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Accessibility statement</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Disclaimer</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Copyright</a>
-                </li>
-              </ul>
+        <div class="footer-top fw-bold">
+            <div class="container-md">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg col-about-portal">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">About Portal</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Accessibility statement</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg col-sitemap">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Sitemap</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Help</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Screen Reader</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg col-connectwithus">
+                        <ul class="list-unstyled mb-0 footer-socialIcons">
+                            <li>
+                                <a href="#!" class="footer-text font-mulish-normal">Connect with us</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-floating m-1 ps-0 footer-text font-mulish-normal" href="#!" role="button">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                                <!-- Twitter -->
+                                <a class="btn btn-floating m-1 footer-text font-mulish-normal" href="#!" role="button"><i class="fa fa-twitter"></i
+                ></a>
+
+                                <!-- YouTube -->
+                                <a class="btn btn-floating m-1 footer-text font-mulish-normal" href="#!" role="button"><i class="fa fa-youtube"></i
+                ></a>
+                            </li>
+
+                        </ul>
+                        <div class="page-update">
+                            <span class="footer-text font-mulish-normal">Page last updated on:</span>
+                            <div id="page-date" class="footer-text font-mulish-normal">Mon Nov 02 18:21:13 IST 2020</div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg col-footerlogo" id="fth-col-img">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white"><img src="./assests/svg/stqc.svg" class="footer-logo img-fluid stqc-logo"></a>
+                                <a href="#!" class="text-white"><img src="./assests/svg/gigw.svg" class="footer-logo img-fluid"></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><img src="./assests/svg/CSM_logo-250.svg" class="footer-logo img-fluid csm-logo"></a>
+                                <a href="#!" class="text-white"><img src="./assests/svg/wcag.svg" class="footer-logo img-fluid"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md col-sitemap">
-              <h5 class="footer-text font-mulish-normal">Sitemap</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Help</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Contact us</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">FAQ</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Screen Reader</a>
-                </li>
-                <li>
-                  <a href="#!" class="footer-text font-mulish-normal">Feedback</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md col-connectwithus">
-              <h5 class="footer-text font-mulish-normal">Connect with us</h5>
-
-              <ul class="list-unstyled mb-0 footer-socialIcons">
-                <li>
-                  <a class="btn btn-floating m-1 footer-text font-mulish-normal" href="#!" role="button">
-                    <i class="fa fa-facebook-f"></i>
-                  </a>
-                  <!-- Twitter -->
-                  <a class="btn btn-floating m-1 footer-text font-mulish-normal" href="#!" role="button"
-                    ><i class="fa fa-twitter"></i
-                  ></a>
-
-                  <!-- YouTube -->
-                  <a class="btn btn-floating m-1 footer-text font-mulish-normal" href="#!" role="button"
-                    ><i class="fa fa-youtube"></i
-                  ></a>
-                </li>
-                
-              </ul>
-              <div class="page-update">
-                <span class="footer-text font-mulish-normal">Page last updated on:</span>
-                <div id="page-date" class="footer-text font-mulish-normal"></div>
-              </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md col-footerlogo">
-              
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white"><img src="./assests/img/stqc-new.png" class="footer-logo stqc-logo"></a>
-                
-                  <a href="#!" class="text-white"><img src="./assests/img/gigw.png" class="footer-logo"></a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white"><img src="./assests/img/ceb53ebd0a893a26f4e2840d8aa06cf0c0083a89.png" class="footer-logo csm-logo"></a>
-                  <a href="#!" class="text-white"><img src="./assests/img/d2d68828ebf13daae6e9a814ab7d6df311f04e5e.png" class="footer-logo"></a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-          </div>
         </div>
         <!-- Footer top-->
-      
 
-      <!-- Copyright -->
-      <div class="fixed-icons btn-group-vertical" role="group">
-            <button class="btn" href="#" role="button" type="btn" id="btn-cm-live" data-toggle="tooltip" data-bs-html="true" title="<em>CM going live. Watch now</em>"><i class="fa fa-youtube"></i></button>
+
+        <!-- Copyright -->
+        <div class="fixed-icons btn-group-vertical" role="group">
+            <div class="toast align-items-center text-center position-fixed w-auto" id="youtube-toast" data-bs-autohide="false" role="alert" aria-live="assertive" aria-atomic="true">
+                <div>
+                    <div class="toast-body">
+                        CM going live. watch now
+                    </div>
+                </div>
+            </div>
+            <button class="btn" href="#" role="button" type="btn" id="btn-cm-live"><i class="fa fa-youtube"></i></button>
             <button class="btn" href="#" role="button" type="btn" id="btn-to-top"><i class="fa fa-angle-up"></i></button>
-          </div>
-      <div class="text-center text-white footer-bottom">
-        <div class="container">
-          
-        <div class="row justify-content-center">
-          <!--<div class="col-6 col-md-4 footer-text text-white"></div>-->
-          <div class="footer-text text-white">This is the state portal of the Government of Kerala. Designed and Developed by C-DIT. Portal owned by Kerala state IT Mission, Content owned and updated by I&PRD<br>
-          Copyrights Government of Kerala.</div>
-          <!-- <div class="col-6 col-md-4 footer-text text-white"></div>< -->
         </div>
+        <div class="text-center text-white footer-bottom">
+            <div class="container-md">
+
+                <div class="row justify-content-center">
+                    <!--<div class="col-6 col-md-4 footer-text text-white"></div>-->
+                    <div class="footer-text text-white">This is the state portal of the Government of Kerala. Designed and Developed by C-DIT. Portal owned by Kerala state IT Mission, Content owned and updated by I&PRD<br> Copyrights Government of Kerala.</div>
+                    <!-- <div class="col-6 col-md-4 footer-text text-white"></div>< -->
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Copyright -->
-      
+        <!-- Copyright -->
+
 
     </footer>
 
 
-
-    
-
-
-<!-- CM Live Tooltip-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      
-      $(function () {
-
-        $('[data-toggle="tooltip"]').tooltip()
-
-      });
-
-    </script>
-   <!--Move to top -->
-   <script type="text/javascript">
-   $(document).ready(function(){
-  $(window).scroll(function () {
-      if ($(this).scrollTop() + $(window).height() > $(document).height() - 100)  {
-        $('#btn-to-top,#btn-cm-live').fadeIn();
-      }  else {
-        $('#btn-to-top, #btn-cm-live').fadeOut();
-      }
-    });
-    // scroll body to 0px on click
-    $('#btn-to-top').click(function () {
-      $('body,html').animate({
-        scrollTop: 0
-      }, 400);
-      return false;
-    });
-});
-</script>
-
-
-
-
-
-<style type="text/css">
-
-/*Body css*/
-.head-light-grey{color: #ababab; font-size: 18px; line-height: 23px;}
-.govt-websites, .section-articles, .section-what-new{margin:75px 0px;}
-.govt-websites img{width: 100px;}
-
-.section-articles img{height:300px;border-radius: 15px;}
-.section-articles .article-date, .section-articles .article-readmore, .section-articles .fa-angle-double-right{color:#6DA4EA;}
-.section-articles .article-author, .head-dark{color: #434343 !important;}
-.section-articles .article-current-title{ margin-bottom: 0px;}
-.section-articles .article-title{ position: relative;
-    z-index: 1;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-    
-  }
-.section-articles .article-title:before
-  { 
-     content : "";
-    position: absolute;
-    left    : 0;
-    bottom  : 0;
-    height  : 1px;
-    width   : 100%;  /* or 100px */
-    border-bottom:1px solid #dee2e6!important;
-  }
-
-
-
-  .section-what-new #col-gov-cm
-  {
-    background: #FFFBF3;
-    border-radius: 15px;
-    padding: 35px;
-    vertical-align: middle;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-  }
-  .section-what-new .image-gov-cm, .image-gov-cm + .col-lg-6{text-align: center;}
-  .section-what-new .image-gov-cm img
-  {
-    width:75px;height: 75px;border-radius: 50%;
-  }
-  .section-what-new #gov-details
-  {
-    margin-bottom: 20px;
-  }
-
-  .section-what-new #col-new-updates
-  {
-    background: #F3FAFF;
-    border-radius: 15px;
-    padding: 15px;
-  }
-  .section-what-new #col-new-updates .blue-head {background: #6DA4EA !important; border-radius: 20px;     margin: auto 25%;}
-
-  .section-what-new #col-new-updates .table-row {
-    display:table-row;
-}
-.section-what-new #col-new-updates .rowGroup {
-    display:table-row-group;
-}
-.section-what-new #col-new-updates .table-cell {
-    display: table-cell;
-    font-size: 14px;
-    padding: 10px;
-    border-bottom: 1px solid #dee2e6!important;
-}
-#news-update-feed > div:nth-child(6) > div > div:nth-child(1), #news-update-feed > div:nth-child(6) > div > div:nth-child(2)
-{
-  border-bottom: none !important;
-  margin-bottom: 5px;
-}
-
-.section-what-new .news-date
-{
-  background: #EA7A6D;
-    padding: 2px 4px;
-    border-radius: 15px;
-  }
-  .section-what-new .red-arrow
-  {
-    background: #EA7A6D;
-    padding: 3px 12px;
-    border-radius: 50%;
-    font-size: 22px;
-  }
-  
-/*Footer css*/
-
-  .footer-top .col-md{border-left:1px solid #5D91D2; padding: 0 35px}
-  .footer-top .col-md:first-child{border:none;}
-  footer .fixed-icons{position: fixed;right:15px; bottom:20px;}
-  footer .fixed-icons .fa-youtube{color:#ff0000;}
-  footer .fixed-icons .btn
-  {
-    background-color: #fff;
-    border-radius: 50px;
-    padding: 6px 9px;
-    margin: 10px 0;
-    border-radius: 50px!important;
-  }
-.tooltip-inner{
-    background-color: #fff;
-    color: #444;
-}
-.tooltip-arrow {display: none !important;}
-
-@media (max-width: 1023px) {
-  
-  footer .col-md.col-footerlogo .list-unstyled
-  {
-    display: flex !important;
-  }
-  .footer-text
-  {
-    font-size: 12px;
-    line-height: 1em;
-  }
-  .footer-logo {
-    height: 50px;
-    width: 50px;
-  }
-  .col-about-portal, .col-sitemap
-  {
-    border-right: 1px solid #5D91D2 !important;
-  }
-  .section-articles .image-container
-  {
-    text-align: right !important;
-  }
-.section-articles .article-title:before
-{ 
-  width:60% !important;
-}
-}
-@media (max-width:767px)
-{
-  .footer-top .col-md
-  {
-    border: none;
-    padding: 10px 20px;
-    width: 50%;
-  } 
-    .col-sitemap
-  {
-    order:2 !important;
-  }
-  .col-footerlogo
-  {
-    order:4 !important;
-  }
-  .section-articles .image-container
-  {
-    text-align: center;
-  }
-  .section-articles .article-title:before
-{ 
-  width:100% !important;
-}
-}
-
-@media (max-width: 576px)
-{
-  .section-articles .image-container
-  {
-    text-align: center !important;
-    margin-bottom: 25px;
-  }
-  #article-current, #article-current .article-schema{
-    text-align: center !important;
-  }
-  .section-what-new #col-gov-cm
-  {
-    margin-bottom: 0px !important;
-  }
-
-}
-
-@media (max-width: 992px)
-{
-  .section-articles .article-title:before
-    { 
-      width:100% !important;
-    } 
-}
-
-
-
-@media (min-width: 992px)
-{
- .section-articles .image-container
-  {
-    text-align: right !important;
-  }
-  .section-articles .article-title:before
-{ 
-  width:75% !important;
-} 
-.section-what-new .image-gov-cm{text-align: right !important;}
-.image-gov-cm + .col-lg-6{text-align: left !important;}
-}
-
-</style> 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="./assests/js/style.js"></script>
 </body>
+
 </html>
