@@ -19,15 +19,15 @@
   <!-- Header -->
   <header>
     <!-- Top Bar -->
-    <div class="row top-bar kg-p-spacing justify-content-start">
-      <div class="col align-items-start">
+    <div class="row top-bar kg-p-spacing align-items-center justify-content-start">
+      <div class="col align-items-start social-col">
         <div class="social-btn d-sm-block d-md-block d-lg-none border-0">
           <button class="btn fb-btn" href="#" role="button">
             <i class="fa fa-facebook"></i></button>
           <button class="btn twitter-btn" href="#" role="button"><i class="fa fa-twitter"></i></button>
         </div>
       </div>
-      <div class="col-lg-6 col-md-10 align-items-end w-auto">
+      <div class="col-lg-6 col-md-10 align-items-end site-func-col w-auto">
         <ul class="nav kg-t-font justify-content-end">
             <li class="nav-item d-none d-sm-none d-lg-block">
               <a class="nav-link text-grey font-mulish-normal skip-btn" aria-current="page" href="#main-content">Skip to Main Content</a>          
@@ -59,13 +59,13 @@
 
     <!-- Main Navbar -->
     <div class="row kg-p-spacing main-nav mt-4 font-mulish-normal align-middle h-100">
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 logo-col">
         <a href="index.html" class="main-title mb-3 mb-lg-0 me-lg-auto">
           <img src="./assests/svg/kg logo.svg" alt="Government of Kerala" class="light-img img-fluid">
           <img src="./assests/svg/kg logo white.svg" alt="Government of Kerala" class="dark-img img-fluid d-none">
         </a>
       </div>
-      <div class="col-6 col-lg-8 double-header">
+      <div class="col-6 col-lg-8 double-header auth-col">
         <div class="row">
           <nav>
             <div class="d-flex justify-content-end kg-t-font align-items-center">
@@ -147,13 +147,13 @@
             <form class="d-sm-block d-lg-none">
               <div class="search"> <input class="search_input" type="text" placeholder="Search"> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
             </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navhamburger" aria-controls="navhamburger" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-auto-close="outside" data-bs-target="#navhamburger" aria-controls="navhamburger" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"><img src="./assests/svg/nav-toggle.svg" alt="navbar toggle"/></span>
             </button>
             <div class="collapse navbar-collapse" id="navhamburger">
               <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 kg-t-font">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="#" id="about-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="about-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About Kerala
                   </a>
                   <div class="dropdown-menu" aria-labelledby="about-dropdown">
@@ -382,23 +382,23 @@
     <div class="container-lg">     
       <div class="row row-no-gutters justify-content-center">
         <div class="col-12 col-lg-6" id="col-gov-cm">
-              <div class="container">
-                <div class="row align-items-center" id="gov-details">
-                  <div class="col-4 image-gov-cm">
+              <div class="container-md">
+                <div class="row align-items-center justify-content-center" id="gov-details">
+                  <div class="col-3 col-lg-4 image-gov-cm">
                     <img class="img-fluid" src="./assests/img/governor.png">
                   </div>
-                  <div class="col-8 pt-2">
+                  <div class="col-6 col-lg-8 pt-2 gov-info">
                     <span class="kg-p-font">Governor</span><br>
-                    <h3 class="head-dark  fw-bold">Shri. Arif Mohammed Khan</h3>
+                    <h3 class="head-dark fw-bold">Shri. Arif Mohammed Khan</h3>
                   </div>
                 </div>
-                <div class="row align-items-center" id="cm-details">
-                  <div class="col-4 image-gov-cm">
+                <div class="row align-items-center justify-content-center" id="cm-details">
+                  <div class="col-3 col-lg-4 image-gov-cm">
                     <img class="img-fluid" src="./assests/img/cm-pinaraayi.png">
                   </div>
-                  <div class="col-8 pt-2">
+                  <div class="col-6 col-lg-8 pt-2 gov-info">
                     <span class="kg-p-font">Chief Minister</span><br>
-                    <h3 class="head-dark  fw-bold">Shri. Pinarayi Vijayan</h3>
+                    <h3 class="head-dark fw-bold">Shri. Pinarayi Vijayan</h3>
                   </div>
                 </div>
               </div>
