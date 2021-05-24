@@ -128,7 +128,7 @@ header.dark{
 /* Header */
 header{
     box-shadow: 0px 2px 30px -10px rgba(193, 193, 193, 0.5);
-    padding: 16px 0 25px 0;
+    padding: 15px 0 15px 0;
 }
 /* Top Bar */
 .top-bar{
@@ -255,7 +255,7 @@ header{
 }
 .search_input::placeholder,.search_input::-ms-input-placeholder {
     color: #d7d7d7;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .search_icon {
     margin-top: 6px;
@@ -710,7 +710,7 @@ footer .fa{
         font-size: 0.75rem;
     }
     .kg-ii-font{
-        font-size: 0.875rem;
+        font-size: 0.75rem;
     }
     .kg-iii-font{
         font-size: 0.8rem;
@@ -780,11 +780,28 @@ footer .fa{
     .mobile-nav-menu .navbar-toggler:focus{
         box-shadow: none;
     }
+    .mobile-nav-menu .navbar-toggler{
+        border: none;
+    }
+    .mobile-nav-menu .navbar-toggler-icon{
+        height: 100%;
+    }
     .mobile-nav-menu .search_icon{
-        margin-top: 8px;
+        margin-top: 4px;
+        height: 25px;
+        width: 25px;
+        font-size: 14px;
     }
     .mobile-nav-menu .search{
         width: 78vw;
+        height: 35px;
+    }
+    .mobile-nav-menu .search_input{
+        line-height: 32px;
+    }
+    .mobile-nav-menu .search_input::placeholder,.search_input::-ms-input-placeholder {
+        color: #d7d7d7;
+        font-size: 0.75rem;
     }
     .navbar-toggler-icon img{
         height: 24px;
@@ -911,7 +928,7 @@ footer .fa{
         padding-top: 12px;
     }
     .mobile-nav-menu .search{
-        width: 63vw;
+        width: 71vw;
     }
     .mobile-nav-menu .search_input{
         width: 79%;
