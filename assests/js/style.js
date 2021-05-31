@@ -15,6 +15,11 @@ $(document).ready(function(){
 		});
 	}
 
+	// View Search Bar
+	$("#kg_search_btn").click(function(){
+		$(".search-form").slideToggle("slow","linear");
+	});
+
 
 	// Change Font Functionality
 	var $font_ele_collection = $("body,.kg-i-font,.kg-ii-font,.kg-iii-font,.kg-iv-font,.kg-v-font,.kg-vi-font,.kg-vii-font,.kg-viii-font,.kg-ix-font,h1,h2,h3,h4,h5");
@@ -26,6 +31,8 @@ $(document).ready(function(){
 	$("#kg-increase-font").click(function(){
 		if ($font_counter<4) {
 			changeFontSize(1);
+			$(".font-size-btn .list-group-item a").removeClass("active");
+			$(this).addClass("active");
 			$("#kg-decrease-font").removeClass("disabled");
 			$font_counter++;
 		}
@@ -34,6 +41,8 @@ $(document).ready(function(){
 		if ($font_counter>0) {
 			changeFontSize(-1);
 			$font_counter--;
+			$(".font-size-btn .list-group-item a").removeClass("active");
+			$(this).addClass("active");
 			if ($font_counter==0 && !$("#kg-decrease-font").hasClass("disabled")) {
 				$("#kg-decrease-font").addClass("disabled");
 			}
@@ -45,6 +54,8 @@ $(document).ready(function(){
 			$this.css( "font-size" , $this.data("orig-size") );
 		});
 		$font_counter = 0;
+		$(".font-size-btn .list-group-item a").removeClass("kg-primary-bg active");
+		$(this).addClass("kg-primary-bg active");
 		if (!$("#kg-decrease-font").hasClass("disabled")) {
 			$("#kg-decrease-font").addClass("disabled");
 		}

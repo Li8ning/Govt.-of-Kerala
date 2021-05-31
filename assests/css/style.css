@@ -1,9 +1,9 @@
 /* General */
-.text-grey{
-    color: #b4b4b4;
-}
 body{
     color: #434343;
+}
+.kg-primary-bg{
+    background: #5D6DBF;
 }
 a:link{
     text-decoration: none;
@@ -87,7 +87,7 @@ header.dark{
 .dark-img.dark{
     display: block !important;
 }
-.main-title h1.dark,.main-title h4.dark,.main-nav-menu a.nav-link.active.dark,.main-nav-menu a.nav-link.dark:hover,.section-articles .article-author.dark, .head-dark.dark,.section-what-new #col-new-updates .table-cell.dark,.footer-text.dark,.search_input.dark{
+.main-nav-menu a.nav-link.active.dark,.main-nav-menu a.nav-link.dark:hover,.section-articles .article-author.dark, .head-dark.dark,.section-what-new #col-new-updates .table-cell.dark,.footer-text.dark,.search_input.dark{
     color: white;
 }
 .main-nav-menu .dropdown-menu a.dropdown-item.dark{
@@ -128,7 +128,7 @@ header.dark{
 /* Header */
 header{
     box-shadow: 0px 2px 30px -10px rgba(193, 193, 193, 0.5);
-    padding: 15px 0 15px 0;
+    padding: 15px 0 30px 0;
 }
 /* Top Bar */
 .top-bar{
@@ -158,7 +158,8 @@ header{
     line-height: 8px;
     color: #162646;
     width: auto;
-    margin-top: 10px;
+    padding: 12px 18px;
+    /* margin-top: 10px; */
 }
 .font-size-btn li a{
     color: #434343;
@@ -177,7 +178,7 @@ header{
     background-color: #0000;
 }
 .font-size-btn li a.active{
-    background: linear-gradient(138.68deg, #63E7FC 3.88%, #68B5FD 98.23%);
+    background: #2A377B;
     border-radius: 20px;
     color: white;
     border: none;
@@ -191,7 +192,7 @@ header{
 	position: absolute;
 }
 .label {
-	background-color: #162646;
+	background-color: #2A377B;
 	border-radius: 16px;
     border: 1px solid #EBEBEB;
 	cursor: pointer;
@@ -224,54 +225,57 @@ header{
 
 
 /* Main Nav */
-.main-title h1{
-    font-weight: 800;
-    line-height: 1.5;
-    text-transform: uppercase;
+.logo-col img{
+    height: 78px;
 }
-.main-title h4{
-    font-weight: bold;
-    line-height: 0.2;
+.skip-btn{
+    color: #b4b4b4;
 }
-
-.search {
+.search-form{
+    display: none;
+}
+.search-form .search {
     margin-bottom: auto;
     margin-top: auto;
-    /* width: 36vw; */
-    height: 49px;
-    border-radius: 24.5px;
+    width: 47vw;
+    height: 67px;
+    border-radius: 44px;
     background: #FFFFFF;
     border: 1px solid #979797;
 }
-.search_input {
+.search-form .search_input {
     color: black;
     border: 0;
     outline: 0;
     background: none;
     width: 85%;
-    line-height: 46px;
+    line-height: 65px;
     padding-left: 30px;
     transition: width 0.4s linear
 }
-.search_input::placeholder,.search_input::-ms-input-placeholder {
+.search-form .search_input::placeholder,.search-form .search_input::-ms-input-placeholder {
     color: #d7d7d7;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
 }
-.search_icon {
+.search-form .search_icon{
     margin-top: 6px;
     margin-right: 10px;
+}
+.search_icon {    
     padding: 17px;
-    color: white;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 600;
-    height: 30px;
-    width: 30px;
+    height: 52px;
+    width: 52px;
     float: right;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #EA7A6D;
+    background-color: #FCC863;
+}
+.search_icon .fa{
+    color: #5D6DBF;
 }
 .double-header .auth-btn{
     border-radius: 22px;
@@ -319,11 +323,12 @@ header{
     color: #434343;
     padding: 5px 10px;
 }
-.main-nav-menu li.nav-item:last-child{
-    margin-right: 0;
+.main-nav-menu li.nav-item{
+    margin-right: 10px;
+    width: auto;
 }
 .main-nav-menu .nav-link.active {
-    background: linear-gradient(138.68deg,#63E7FC 3.88%, #68B5FD 98.23%);
+    background: #5D6DBF;
     border-radius: 20px;
     color: white;
 }
@@ -389,6 +394,10 @@ header{
 }
 .img-outer:hover{
     background: #F6F8FF;
+    box-shadow: -3px 3px 19px -9px rgb(77 128 220 / 50%);
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transform: translate(10px, -5px);
 }
 .img-outer{
     border-radius: 48px;
@@ -600,20 +609,20 @@ footer .fa{
 /* Max Media Queries */
 @media (max-width:1399px){
 }
-@media (max-width: 1366px){
-    .main-nav-menu li.nav-item{
-        margin-right: 9px;
-    }
-}
 @media (max-width:1200px){
     .img-outer{
         padding: 13px !important;
     }
-    .main-nav-menu li.nav-item{
-        margin-right: 3px;
+    .search_icon{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
-    .search{
-        width: 32vw;
+    .search-form .search{
+        height: 55px;
+    }
+    .search-form .search_input{
+        line-height: 53px;
     }
     .footer-logo{
         width: 80px;
@@ -659,9 +668,6 @@ footer .fa{
     }
     .font-size-btn li a{
         margin-top: 2px !important;
-    }
-    .main-nav-menu li.nav-item {
-        margin-right: 0px;
     }
     .desk-nav{
         display: none;
@@ -965,21 +971,7 @@ footer .fa{
 
 
 /* Min Media Queries */
-@media (min-width:320px){
-    
-}
-@media (min-width: 320px) and (max-width: 450px){
-    .main-title h1{
-        float: left;
-    }
-    .main-title h4{
-        float: left;
-    } 
-}
 @media (min-width: 576px){
-    .lang-btn{
-        margin-top: 12px;
-    }
     footer .col-connectwithus .fa{
         font-size: 2.25rem !important;
     }
@@ -1001,7 +993,7 @@ footer .fa{
         width:75% !important;
     }
     .main-nav-menu .nav-link:hover{
-        background: linear-gradient(138.68deg,#63E7FC 3.88%, #68B5FD 98.23%);
+        background: #5D6DBF;
         border-radius: 20px;
         color: white;
     }
@@ -1024,9 +1016,9 @@ footer .fa{
     }
 }
 @media (min-width: 1200px){
-    .search{
+    /* .search{
         width: 36vw;
-    }
+    } */
     .section-what-new #col-new-updates .table-cell.news-title{
         padding: 15px 0;
     }
@@ -1034,12 +1026,6 @@ footer .fa{
 @media (min-width:1024px) and (max-width:1336px){
     .main-nav-menu li.nav-item:last-child {
         margin-right: 0 !important;
-    }
-}
-@media (min-width: 1367px){
-    .main-nav-menu li.nav-item{
-        margin-right: 25px;
-        width: auto;
     }
 }
 @media (min-width:1400px){
