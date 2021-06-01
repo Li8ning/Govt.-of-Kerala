@@ -353,9 +353,11 @@ header{
     margin-right: 6px;
     width: auto;
 }
+.main-nav-menu .nav-link{    
+    border-radius: 20px;
+}
 .main-nav-menu .nav-link.active {
     background: #5D6DBF;
-    border-radius: 20px;
     color: white;
 }
 .main-nav-menu .dropdown-toggle::after{
@@ -1143,7 +1145,6 @@ footer .fa {
     }
     .main-nav-menu .nav-link:hover{
         background: #5D6DBF;
-        border-radius: 20px;
         color: white;
     }
     .image-gov-cm + .col-lg-6{
