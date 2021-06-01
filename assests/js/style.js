@@ -54,8 +54,8 @@ $(document).ready(function(){
 			$this.css( "font-size" , $this.data("orig-size") );
 		});
 		$font_counter = 0;
-		$(".font-size-btn .list-group-item a").removeClass("kg-primary-bg active");
-		$(this).addClass("kg-primary-bg active");
+		$(".font-size-btn .list-group-item a").removeClass("active");
+		$(this).addClass("active");
 		if (!$("#kg-decrease-font").hasClass("disabled")) {
 			$("#kg-decrease-font").addClass("disabled");
 		}
