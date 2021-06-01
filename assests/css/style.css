@@ -12,6 +12,18 @@ a:link{
     font-family: Mulish;
     font-style: normal;
 }
+.font-poppins-normal{
+    font-family: Poppins;
+    font-style: normal;
+}
+.font-merriweather-normal{
+    font-family: Merriweather;
+    font-style: normal;
+}
+.font-roboto-normal{
+    font-family: Roboto;
+    font-style: normal;
+}
 .kg-i-font{
     font-size: 0.75rem;
 }
@@ -350,15 +362,56 @@ header{
 }
 
 /* Alert Section */
-.kg-alert{
-    background: #FFEEEE;
-    box-shadow: 0px 5px 19px -9px rgba(77, 128, 220, 0.5);
-    border-radius: 34.5px;
+.first-alert .kg-alert{
+    background: #F8F8F8;
+    border-radius: 47px;
+    /* box-shadow: 0px 5px 19px -9px rgba(77, 128, 220, 0.5); */
+}
+.kg-alert .row{
+    padding-right:100px;
+    padding-left:100px;
+}
+.kg-alert .imp-btn,.kg-alert .long-msg{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.kg-alert .short-msg{
+    padding-bottom: 20px;
+}
+.kg-alert .imp-btn .btn{
+    background: #D6534D;
+    border-radius: 46px;
+    color: white;
+}
+.kg-alert .long-msg{
+    background: #E3E8FF;
+}
+.third-alert{
+    margin-bottom: 6rem;
+    color: white;
+}
+.third-alert img{
+    border: 4px solid #FFFFFF;
+    object-fit: cover;
+    border-radius: 17px;
+}
+.third-alert .kg-alert-content h4{
+    color: #FCC863;
 }
 
-/* Banner */
+/* Image Carousel */
 .carousel-indicators{
     margin-bottom: 0;
+}
+.carousel-inner,.carousel-item,.carousel-item img{
+    height: inherit;
+}
+.carousel-item img{
+    /* min-height: 634px; */
+    object-fit: cover;
+}
+.carousel-indicators{
+    bottom: 14px;
 }
 .carousel-indicators [data-bs-target]{
     border-radius: 50%;
@@ -376,13 +429,29 @@ header{
     z-index: 3;
 }
 .carousel-control-next{
-    background: #EA7A6D;
-    right: 225px;
+    right: 42%;
 }
 .carousel-control-prev{
-    background: #6DA4EA;
-    right: 270px;
-    left: auto;
+    left: 42%;
+}
+.banner-tag{
+    background: #FCC863;
+    border-radius: 20px;
+    color: #5D6DBF;
+}
+/* Middle Rectangle */
+.middle-rectangle{
+    left: -35px;
+}
+/* Quote Carousel */
+#kg-quote-carousel .carousel-caption{
+    position: static;
+    text-align: start;
+}
+.quo-car .row{
+    padding-left: 10px;
+    padding-right: 0px;
+    margin: 90px 0;
 }
 
 /* Services */
@@ -414,15 +483,6 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-}
-
-/* Alert Boxes */
-.third-alert{
-    margin-bottom: 6rem;
-}
-.third-alert img{
-    object-fit: cover;
-    border-radius: 17px;
 }
 
 /* News Article */
@@ -607,7 +667,10 @@ footer .fa{
 }
 
 /* Max Media Queries */
-@media (max-width:1399px){
+@media (max-width:1400px){
+    .middle-rectangle{
+        left: -40px;
+    }  
 }
 @media (max-width:1200px){
     .img-outer{
@@ -1031,5 +1094,9 @@ footer .fa{
 @media (min-width:1400px){
     .third-alert{
         padding: 0 175px;
+    }
+    .quo-car .row{
+        padding-left: 30px;
+        padding-right: 80px;
     }
 }

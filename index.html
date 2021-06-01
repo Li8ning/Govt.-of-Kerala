@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="./assests/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/djc7ruy.css">
     <script src="https://kit.fontawesome.com/208eb39700.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -244,7 +244,7 @@
           </ul>
         </div>
         <div class="row float-end">
-          <nav class="navbar main-nav-menu p-0 pt-2 navbar-expand-lg">
+          <nav class="navbar font-poppins-normal main-nav-menu p-0 pt-2 navbar-expand-lg">
               <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                   <li class="nav-item dropdown">
@@ -311,51 +311,92 @@
   </header>
   <!-- Header End -->
 
-  <!-- 1st Alert Section -->
+  <!-- Search Bar -->
   <div class="container kg-v-font my-4 search-form">
       <form class="d-flex justify-content-center">
         <div class="search"> <input class="search_input" type="text" placeholder="Search"> <a href="#" class="search_icon"><i class="fa fa-search"></i></a> </div>
       </form>
   </div>  
-  <!-- 1st Alert Section End-->
+  <!-- Search Bar End-->
 
   <!-- Slider -->
-  <div id="kg-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#kg-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#kg-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#kg-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="container-fluid ps-0">
+    <div class="row kg-primary-bg">
+      <div class="col-8 img-car">
+        <div id="kg-image-carousel" class="carousel slide carousel-sync h-100" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#kg-image-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#kg-image-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#kg-image-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assests/img/slide-1.jpg" class="d-block w-100" alt="slide 1">
+            </div>
+            <div class="carousel-item">      
+              <img src="./assests/img/slide-2.jpg" class="d-block w-100" alt="slide 2">  
+            </div>
+            <div class="carousel-item">        
+              <img src="./assests/img/slide-1.png" class="d-block w-100" alt="slide 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#kg-image-carousel" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#kg-image-carousel" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-4 quo-car align-self-center position-relative d-flex">
+        <div class="middle-rectangle position-absolute d-flex h-100">
+          <img src="./assests/svg/Slider Rectangle.svg" alt="" class="img-fluid">
+        </div>
+        <div class="row">          
+          <div id="kg-quote-carousel" class="carousel slide carousel-sync" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Welcome To Kerala Government Official Web Portal</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Welcome To Kerala Government Official Web Portal 2</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Welcome To Kerala Government Official Web Portal 3</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Welcome To Kerala Government Official Web Portal 4</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn banner-tag w-auto mb-2 ms-2">Know Our Kerala</button>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A commodo elit hac morbi nec, at vestibulum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A commodo elit hac morbi nec, at vestibulum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A commodo elit hac morbi nec, at vestibulum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A commodo elit hac morbi nec, at vestibulum velit.</p>
+        </div>
+      </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assests/img/slide-1.png" class="d-block w-100" alt="slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src="./assests/img/slide-2.jpg" class="d-block w-100" alt="slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="./assests/img/slide-1.png" class="d-block w-100" alt="slide 3">
-      </div>
-    </div>
-    <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#kg-carousel" data-bs-slide="prev">
-      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-      <i class="fas fa-chevron-left"></i>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#kg-carousel" data-bs-slide="next">
-      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-      <i class="fas fa-chevron-right"></i>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!-- Slider End -->
 
   <!-- 2nd Alert Section -->
-  <div class="container second-alert my-5 font-mulish-normal kg-iii-font" id="main-content">
-    <div class="kg-alert alert d-flex align-items-center py-3 px-3 px-lg-5" role="alert">
-      <img src="./assests/svg/kg-alert-icon.svg" alt="KG Alert Icon" class="d-none d-lg-block">
-      <div class="ms-lg-4 text-center text-lg-start">
-        <h4 class="fw-bold kg-vi-font">Lorem Ipsum is simply dummy text of the printing</h4>
+  <div class="container first-alert my-5 font-mulish-normal kg-iii-font" id="main-content">
+    <div class="kg-alert alert align-items-center p-0 overflow-hidden" role="alert">
+      <div class="row imp-btn m-0 justify-content-center justify-content-lg-start">
+        <button class="btn w-auto">important</button>
+      </div>
+      <div class="row short-msg m-0 w-100 text-center text-lg-start">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </div>
+      <div class="row long-msg m-0 text-center w-100 text-lg-start">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
       </div>
     </div>
@@ -450,14 +491,14 @@
   <!-- Services End-->
 
   <!-- 3rd Alert Section -->
-  <div class="container third-alert kg-iii-font mt-5 font-mulish-normal">
+  <div class="container-fluid kg-primary-bg third-alert kg-iii-font mt-5 font-mulish-normal">
     <div class="kg-alert alert text-center text-lg-start py-5 px-3 px-lg-5" role="alert">
       <div class="row">
         <div class="col-12 col-lg-5 mb-3 mb-lg-0">
           <img class="img-fluid w-100 h-100" src="./assests/img/3rd-alert-img.jpg" alt="">
         </div>
-        <div class="col-12 col-lg-7">
-          <h4 class="mb-3 fw-bold kg-vi-font">This is a sample alert message This is a sample alert message</h4>
+        <div class="col-12 col-lg-7 kg-alert-content align-self-center">
+          <h4 class="mb-3 fw-bold kg-vi-font">This is a sample alert message</h4>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked updated
         </div>
       </div>

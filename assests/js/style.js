@@ -74,6 +74,20 @@ $(document).ready(function(){
 		dark_mode(class_name);
 	});
 
+
+	// Image and Quote Carousel Functionality
+	car_sync = $(".carousel-sync");
+	car_sync.carousel({
+		interval: 5000
+	});
+	car_sync.on('slide.bs.carousel', function(ev) {
+		var dir = ev.direction == 'right' ? 'prev' : 'next';
+		car_sync.not('.sliding').addClass('sliding').carousel(dir);
+	});
+	car_sync.on('slid.bs.carousel', function(ev) {
+		car_sync.removeClass('sliding');
+	});
+
 	// Bottom right buttons hide/show on scroll
 	$(window).scroll(function () {
 		if ($(this).scrollTop() + $(window).height() > $(document).height() - 100)  {
