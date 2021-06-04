@@ -16,7 +16,7 @@ $(document).ready(function(){
 	}
 
 	// View Search Bar
-	$("#kg_search_btn").click(function(){
+	$(".kg_search_btn").click(function(){
 		$(".search-form").slideToggle("slow","linear");
 	});
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 	// Dark Mode Activator
 	$('#chk').change(function(){
-		var class_name = ["body","header",".label",".lang-btn",".font-size-btn li a",".main-title h1",".main-title h4",".light-img",".dark-img",".search",".search_input",".main-nav-menu .dropdown-menu",".main-nav-menu a.nav-link",".main-nav-menu .dropdown-menu a.dropdown-item",".main-nav-menu .dropdown-menu .dropdown-item:hover",".kg-alert",".img-outer",".img-border",".section-what-new #col-gov-cm",".section-articles .article-author",".head-dark",".section-what-new #col-new-updates",".section-what-new #col-new-updates .table-cell",".footer-top",".footer-text",".footer-bottom,#youtube-toast .toast-body,.footer-top .col-connectwithus .fa"];
+		var class_name = ["body","header",".label",".label .fas.fa-sun",".label .ball",".lang-btn",".font-size-btn li a",".main-title h1",".main-title h4",".light-img",".dark-img",".search",".search_input",".search_icon",".search_icon .fa",".main-nav-menu .dropdown-menu",".main-nav-menu a.nav-link",".main-nav-menu .dropdown-menu a.dropdown-item",".main-nav-menu .dropdown-menu .dropdown-item:hover",".kg-primary-bg",".carousel-caption",".banner-tag",".first-alert .kg-alert",".first-alert .kg-alert .long-msg",".img-outer",".img-border",".third-alert .kg-alert-content h4",".third-alert img",".section-what-new #gov-details",".section-what-new #cm-details","#article-current",".section-articles .article-author",".article-schema .article-date",".head-dark",".section-what-new #col-new-updates .table-cell","#show-all-updates",".kg-bg-grey",".section-articles img",".footer-top",".footer-text",".footer-bottom,#youtube-toast .toast-body,.footer-top .col-connectwithus .fa"];
 		dark_mode(class_name);
 	});
 
