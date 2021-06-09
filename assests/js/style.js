@@ -7,6 +7,7 @@ function dark_mode(class_name) {
 
 $(document).ready(function() {
 
+
     // For Screen Size>1024
     if ($(window).width() >= 992) {
         $(".dropdown").hover(function() {
@@ -71,7 +72,7 @@ $(document).ready(function() {
 
     // Dark Mode Activator
     $('#chk').change(function() {
-        var class_name = ["body", "header", ".label", ".label .fas.fa-sun", ".label .ball", ".lang-btn", ".font-size-btn li a", ".main-title h1", ".main-title h4", ".light-img", ".dark-img", ".search", ".search_input", ".search_icon", ".search_icon .fa", ".main-nav-menu .dropdown-menu", ".main-nav-menu a.nav-link", ".main-nav-menu .dropdown-menu a.dropdown-item", ".main-nav-menu .dropdown-menu .dropdown-item:hover", ".kg-primary-bg", ".carousel-caption", ".banner-tag", ".first-alert .kg-alert", ".first-alert .kg-alert .long-msg", ".img-outer", ".img-border", ".third-alert .kg-alert-content h4", ".third-alert img", ".section-what-new #gov-details", ".section-what-new #cm-details", "#article-current", ".section-articles .article-author", ".article-schema .article-date", ".head-dark", ".section-what-new #col-new-updates .table-cell", "#show-all-updates", ".kg-bg-grey", ".section-articles img", ".footer-top", ".footer-text", ".footer-bottom,#youtube-toast .toast-body,.footer-top .col-connectwithus .fa"];
+        var class_name = ["body", "header", ".label", ".label .fas.fa-sun", ".label .ball", ".lang-btn", ".font-size-btn li a", ".main-title h1", ".main-title h4", ".light-img", ".dark-img", ".search", ".search_input", ".search_icon", ".search_icon .fa", ".main-nav-menu .dropdown-menu", ".main-nav-menu a.nav-link", ".main-nav-menu .dropdown-menu a.dropdown-item", ".main-nav-menu .dropdown-menu .dropdown-item:hover", ".kg-primary-bg", ".carousel-caption", ".banner-tag", ".first-alert .kg-alert", ".first-alert .kg-alert .long-msg", ".img-outer", ".img-border", ".third-alert .kg-alert-content h4", ".third-alert img", ".section-what-new #gov-details", ".section-what-new #cm-details", "#article-current", ".section-articles .article-author", ".article-schema .article-date", ".head-dark", ".section-what-new #col-new-updates .table-cell", "#show-all-updates", ".kg-bg-grey", ".section-articles img", ".footer-top", ".footer-text", ".footer-bottom", "#youtube-toast .toast-body", ".footer-top .col-connectwithus .fa", ".dark-border", ".media-container .dark-text"];
         dark_mode(class_name);
     });
 
@@ -93,6 +94,8 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() + $(window).height() > $(document).height() - 100) {
             //$('#btn-to-top,#btn-cm-live').fadeIn();
+            $('#btn-cm-live').css("box-shadow", "5px 6px 19px -9px rgb(77 128 220 / 50%)");
+            $('#btn-cm-live').css("background-color", "#fefefe");
             $('#btn-to-top').fadeIn();
             $('#youtube-toast').toast('show');
         } else {
