@@ -236,6 +236,11 @@ header.dark {
     background: #1a1a42;
 }
 
+#btn-kg-back.dark {
+    border-color: #fff;
+    color: white;
+}
+
 
 /* Header */
 
@@ -758,7 +763,7 @@ header {
 
 .section-what-new #col-new-updates {
     border-radius: 15px;
-    padding: 30px 70px;
+    padding: 30px 50px;
     border: 1px solid;
 }
 
@@ -865,7 +870,7 @@ footer .fixed-icons .fa-youtube {
 }
 
 footer .fixed-icons .btn {
-    background-color: #fff;
+    background-color: #f3f4ff;
     border-radius: 50px;
     padding: 8px 6px;
     margin: 10px 0;
@@ -912,6 +917,113 @@ footer .fa {
 #fth-col-img>table>tbody>tr:nth-child(2)>td:nth-child(2) {
     width: 75%;
 }
+
+
+/*Article Page Css*/
+
+.article-container .article-schema .article-author {
+    background: #5D6DBF;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.article-container .article-images {
+    margin: 0;
+}
+
+.article-container .article-images img {
+    height: 150px !important;
+    border-radius: 18px !important;
+    object-fit: cover;
+}
+
+.article-container .article-images .article-content-images {
+    display: contents;
+    padding: 0;
+}
+
+.article-container .article-img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.article-container .head-related-articles {
+    border-radius: 18px;
+}
+
+.article-container .article-back {
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+#btn-kg-back {
+    border: 1px solid #374699;
+    border-radius: 18px;
+    padding: 6px 20px;
+    color: #374699;
+}
+
+.links-article .link-article-row {
+    border-bottom: 1px solid #ECECEC;
+    padding: 20px 0;
+}
+
+.links-article .link-article-row:last-child {
+    border-bottom: none !important;
+}
+
+.article-container .article-schema {
+    background: none !important;
+}
+
+
+/*End of Article Page Css*/
+
+
+/*media page css*/
+
+.media-container .img-container .figure {
+    padding: 10px 8px;
+    transition: transform .2s;
+    display: inline-block;
+    text-align: center;
+}
+
+.media-container .img-container .figure img {
+    width: 280px;
+    height: 280px;
+    max-height: 280px;
+    border-radius: 22px !important;
+}
+
+.media-container figcaption {
+    color: #434343;
+    line-height: 24px;
+}
+
+.media-container .img-container figure:hover {
+    background: #FCC863;
+    border: 1px solid #FCC863;
+    border-radius: 18px;
+}
+
+.media-container .img-container figure:hover img {
+    transform: scale(1.05);
+}
+
+#news-update-feed .rowGroup:hover {
+    background: #ffffff;
+    border-radius: 50px !important;
+    box-shadow: -3px 3px 19px -9px rgb(77 128 220 / 50%);
+}
+
+.media-container .dark-text.dark {
+    color: #ffffff;
+}
+
+
+/*End of media page css*/
 
 
 /* Max Media Queries */
@@ -1397,6 +1509,7 @@ footer .fa {
 @media (min-width: 1200px) {
     .section-what-new #col-new-updates .table-cell.news-title {
         padding-bottom: 15px;
+        padding-top: 15px;
     }
 }
 
@@ -1416,5 +1529,65 @@ footer .fa {
     }
     .navbar-brand {
         width: 30%;
+    }
+}
+
+@media (min-width:1200px) {
+    .article-container .article-img {
+        width: 63px;
+        height: 63px;
+    }
+}
+
+@media (min-width:992px) {
+    .article-schema {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width:768px) {
+    .article-container .article-images img {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0;
+        max-height: 250px;
+    }
+    .kg-ix-font {
+        font-size: 1.875rem;
+    }
+    .article-container .article-current-title {
+        line-height: 48px;
+    }
+    .article-container .article-title {
+        font-size: 0.875rem;
+        line-height: 21px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .media-container .img-container .figure img {
+        width: 250px;
+        height: 250px;
+        max-height: 250px;
+    }
+}
+
+@media (max-width:765px) {
+    .media-container .img-container .figure img {
+        width: 350px;
+        height: 350px;
+        max-height: 350px !important;
+    }
+}
+
+@media (min-width:595px)and (max-width:767px) {
+    .media-container .img-container {
+        width: 50%;
+    }
+}
+
+@media (min-width:768px)and (max-width:992px) {
+    .media-container .img-container {
+        width: 33.3%;
     }
 }
