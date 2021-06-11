@@ -1,7 +1,13 @@
 // Dark Mode Function
 function dark_mode(class_name) {
     class_name.forEach(element => {
-        $(element).toggleClass('dark');
+        if ($(element).hasClass('dark')) {
+            $(element).removeClass('dark');
+        }
+        else{
+            $(element).addClass('dark');
+        }
+        // $(element).toggleClass('dark');
     });
 }
 
@@ -72,7 +78,7 @@ $(document).ready(function() {
 
     // Dark Mode Activator
     $('#chk').change(function() {
-        var class_name = ["body", "header", ".label", ".label .fas.fa-sun", ".label .ball", ".lang-btn", ".font-size-btn li a", ".main-title h1", ".main-title h4", ".light-img", ".dark-img", ".search", ".search_input", ".search_icon", ".search_icon .fa", ".main-nav-menu .dropdown-menu", ".main-nav-menu a.nav-link", ".main-nav-menu .dropdown-menu a.dropdown-item", ".main-nav-menu .dropdown-menu .dropdown-item:hover", ".kg-primary-bg", ".carousel-caption", ".banner-tag", ".first-alert .kg-alert", ".first-alert .kg-alert .long-msg", ".img-outer", ".img-border", ".third-alert .kg-alert-content h4", ".third-alert img", ".section-what-new #gov-details", ".section-what-new #cm-details", "#article-current", ".section-articles .article-author", ".article-schema .article-date", ".head-dark", ".section-what-new #col-new-updates .table-cell", "#show-all-updates", ".kg-bg-grey", ".section-articles img", ".footer-top", ".footer-text", ".footer-bottom","#youtube-toast .toast-body",".footer-top .col-connectwithus .fa",".sidebar .related-title",  ".dark-border", ".media-container .dark-text"];
+        var class_name = ["body", "header", ".label", ".label .fas.fa-sun", ".label .ball", ".lang-btn", ".font-size-btn li a", ".main-title h1", ".main-title h4", ".light-img", ".dark-img", ".search", ".search_input", ".search_icon", ".search_icon .fa", ".main-nav-menu .dropdown-menu", ".main-nav-menu a.nav-link", ".main-nav-menu .dropdown-menu a.dropdown-item", ".main-nav-menu .dropdown-menu .dropdown-item:hover", ".kg-primary-bg", ".carousel-caption", ".banner-tag", ".first-alert .kg-alert", ".first-alert .kg-alert .long-msg", ".img-outer", ".img-border", ".third-alert .kg-alert-content h4", ".third-alert img", ".section-what-new #gov-details", ".section-what-new #cm-details", "#article-current", ".section-articles .article-author", ".article-schema .article-date", ".head-dark", ".section-what-new #col-new-updates .table-cell", "#show-all-updates", ".kg-bg-grey", ".section-articles img", ".footer-top", ".footer-text", ".footer-bottom","#youtube-toast .toast-body",".footer-top .col-connectwithus .fa",".sidebar .related-title",  ".dark-border", ".media-container .dark-text",".carousel-item img",".section-what-new .image-gov-cm img",".govt-websites .col img",".footer-logo",".article-current-img",".related-img",".article-container .article-images img",".media-container .img-container .figure img",".media-gallery img"];
         dark_mode(class_name);
     });
 

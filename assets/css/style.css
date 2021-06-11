@@ -117,6 +117,10 @@ body.dark {
     color: white;
 }
 
+.carousel-item img.dark,.third-alert img.dark,.section-articles img.dark,.img-border.dark,.section-what-new .image-gov-cm img.dark,.govt-websites .col img.dark,.footer-logo.dark,.article-current-img.dark,.related-img.dark,.article-container .article-images img.dark,.media-container .img-container .figure img.dark,.media-gallery img.dark{
+    filter: grayscale(1);
+}
+
 header.dark {
     box-shadow: 0px 2px 30px -10px rgba(0, 0, 0, 0.5);
 }
