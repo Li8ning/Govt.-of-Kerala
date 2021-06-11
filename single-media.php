@@ -58,4 +58,13 @@ include './header.php';?>
                 'prev': '<i class="fas fa-chevron-left"></i>'
             }
     });
+    lightbox.on('slide_after_load',()=>{
+        const loaded_img = $('.gslide-image img');
+        if ($('.chkbox-label').hasClass('dark')) {
+            loaded_img.addClass('dark');
+        }
+        else if(!$('.chkbox-label').hasClass('dark')){
+            loaded_img.removeClass('dark');
+        }      
+    });
 </script>

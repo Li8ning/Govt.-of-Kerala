@@ -45,7 +45,7 @@
                 <li class="nav-item">
                     <form class="nav-link d-flex py-0">
                         <input type="checkbox" class="checkbox" id="chk" />
-                        <label class="label" for="chk">
+                        <label class="label chkbox-label" for="chk">
                                 <i class="fas fa-sun"></i>
                                 <i class="fas fa-moon"></i>                    
                                 <div class="ball"></div>

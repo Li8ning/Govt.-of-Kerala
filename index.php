@@ -18,16 +18,16 @@ include './header.php'; ?>
                             <img src="./assets/img/slide-1.jpg" class="d-block w-100" alt="slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/img/slide-2.jpg" class="d-block w-100" alt="slide 2">
+                            <img src="./assets/img/slide-4.png" class="d-block w-100" alt="slide 2">
                         </div>
                         <div class="carousel-item">
                             <img src="./assets/img/slide-3.jpg" class="d-block w-100" alt="slide 3">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#kg-image-carousel" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#kg-image-carousel" data-bs-slide="next">
             <i class="fas fa-chevron-right"></i>
             <span class="visually-hidden">Next</span>
