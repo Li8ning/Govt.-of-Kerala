@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="./assets/img/favicon-white.png"/>
     <?php
-    if ($title == 'Single Media') {
+    if ($title == 'Single Media' || 'Article Page') {
     ?>
     <link rel="stylesheet" href="./assets/glightbox/dist/css/glightbox.css" />
     <?php

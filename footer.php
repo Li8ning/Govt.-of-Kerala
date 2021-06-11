@@ -135,7 +135,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/style.js"></script>
     <?php
-    if ($title == 'Single Media') {
+    if ($title == 'Single Media' || 'Article Page') {
     ?>
     <script src="./assets/glightbox/dist/js/glightbox.min.js"></script>
     <?php

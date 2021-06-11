@@ -40,10 +40,19 @@ include './header.php'; ?>
                                 nisl. Duis id leo velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet mollis sollicitudin. Cras fringilla et ipsum sit amet mattis. Morbi a elementum ante. Mauris facilisis lorem quis </p>
                         </div>
                         <div class="my-md-5 px-0">
-                            <div class="row container-lg article-images ">
-                                <div class="col-12 col-md-4 d-block article-content-images px-xs-0 px-md-1"><img src="./assets/img/article1.jpg" class="rounded mx-md-2 my-2 w-100 mx-sm-0 img-fluid"></div>
+                            <div class="row container-lg article-images">
+                                <a href="./assets/img/article1.jpg" class="glightbox p-0">
+                                    <img src="./assets/img/article1.jpg" alt="image" />
+                                </a>
+                                <a href="./assets/img/article2.jpg" class="glightbox p-0">
+                                    <img src="./assets/img/article2.jpg" alt="image" />
+                                </a>
+                                <a href="./assets/img/article3.jpg" class="glightbox p-0">
+                                    <img src="./assets/img/article3.jpg" alt="image" />
+                                </a>
+                                <!-- <div class="col-12 col-md-4 d-block article-content-images px-xs-0 px-md-1"><img src="./assets/img/article1.jpg" class="rounded mx-md-2 my-2 w-100 mx-sm-0 img-fluid"></div>
                                 <div class="col-12 col-md-4 d-block article-content-images px-xs-0 px-md-1"><img src="./assets/img/article2.jpg" class="rounded mx-md-2 my-2 w-100 mx-sm-0 img-fluid"></div>
-                                <div class="col-12 col-md-4 d-block article-content-images px-xs-0 px-md-1"><img src="./assets/img/article3.jpg" class="rounded mx-md-2 my-2 w-100 mx-sm-0 img-fluid"></div>
+                                <div class="col-12 col-md-4 d-block article-content-images px-xs-0 px-md-1"><img src="./assets/img/article3.jpg" class="rounded mx-md-2 my-2 w-100 mx-sm-0 img-fluid"></div> -->
                             </div>
 
 
@@ -64,3 +73,25 @@ include './header.php'; ?>
 
     <!-- Footer-->
     <?php include "./footer.php" ?>
+
+    <script>
+    // Lightbox Configure
+    var lightbox = GLightbox({
+        loop: true,
+        svg:
+            {
+                'close': '<img src="./assets/svg/x-circle.svg">',
+                'next': '<i class="fas fa-chevron-right"></i>',
+                'prev': '<i class="fas fa-chevron-left"></i>'
+            }
+    });
+    lightbox.on('slide_after_load',()=>{
+        const loaded_img = $('.gslide-image img');
+        if ($('.chkbox-label').hasClass('dark')) {
+            loaded_img.addClass('dark');
+        }
+        else if(!$('.chkbox-label').hasClass('dark')){
+            loaded_img.removeClass('dark');
+        }
+    });
+</script>
