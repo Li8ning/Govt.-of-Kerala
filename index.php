@@ -5,8 +5,8 @@ include './header.php'; ?>
 
 <!-- Slider -->
 <div class="container-fluid ps-0 font-poppins-normal">
-        <div class="row kg-primary-bg">
-            <div class="col-lg-8 img-car">
+        <div class="row kg-primary-bg align-items-center">
+            <div class="col-lg-8 img-car position-relative pe-0">
                 <div id="kg-image-carousel" class="carousel slide carousel-sync" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#kg-image-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -18,7 +18,7 @@ include './header.php'; ?>
                             <img src="./assets/img/slide-1.jpg" class="d-block w-100" alt="slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/img/slide-4.png" class="d-block w-100" alt="slide 2">
+                            <img src="./assets/img/slide-2.jpg" class="d-block w-100" alt="slide 2">
                         </div>
                         <div class="carousel-item">
                             <img src="./assets/img/slide-3.jpg" class="d-block w-100" alt="slide 3">
@@ -29,16 +29,16 @@ include './header.php'; ?>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#kg-image-carousel" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
-          </button>
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-            <div class="col-lg-4 quo-car align-self-center position-relative d-flex">
-                <div class="middle-rectangle position-absolute d-flex h-100">
+                <div class="middle-rectangle position-absolute d-flex h-100 align-items-center">
                     <img src="./assets/svg/Slider Rectangle.svg" alt="" class="img-fluid light-img">
                     <img src="./assets/svg/Slider Rectangle Dark.svg" alt="" class="img-fluid dark-img d-none">
                 </div>
+            </div>
+            <div class="col-lg-4 quo-car align-self-center d-flex">                
                 <div class="row justify-content-center justify-content-lg-start text-center text-lg-start">
                     <div id="kg-quote-carousel" class="carousel slide carousel-sync font-merriweather-normal" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -49,24 +49,23 @@ include './header.php'; ?>
                             </div>
                             <div class="carousel-item">
                                 <div class="carousel-caption">
-                                    <h1 class="fw-bold kg-ix-font">Welcome To Kerala Government Official Web Portal 2</h1>
+                                    <h1 class="fw-bold kg-ix-font">Welcome To Kerala Government Official Web Portal</h1>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="carousel-caption">
-                                    <h1 class="fw-bold kg-ix-font">Welcome To Kerala Government Official Web Portal 3</h1>
+                                    <h1 class="fw-bold kg-ix-font">Welcome To Kerala Government Official Web Portal</h1>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="carousel-caption">
-                                    <h1 class="fw-bold kg-ix-font">Welcome To Kerala Government Official Web Portal 4</h1>
+                                    <h1 class="fw-bold kg-ix-font">Welcome To Kerala Government Official Web Portal</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <button class="btn banner-tag w-auto mb-2 ms-2 kg-iii-font">Know Our Kerala</button>
-                    <p class="text-white kg-ii-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est facilisis enim, est id. Laoreet nibh placerat viverra maecenas sit cursus. Ultricies urna, tellus odio donec malesuada. Donec at commodo vestibulum cras. Eu porttitor
-                        in lorem pellentesque pretium elit sapien Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est facilisis enim, est id. Laoreet nibh placerat viverra maecenas sit cursus.</p>
+                    <p class="text-white kg-i-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est facilisis enim, est id. Laoreet nibh placerat viverra maecenas sit cursus. Ultricies urna, tellus odio donec malesuada. Donec at commodo vestibulum cras.Ultricies urna, tellus odio donec malesuada. Donec at commodo vestibulum cras.Donec at commodo vestibulum cras.Ultricies urna.</p>
                 </div>
             </div>
         </div>

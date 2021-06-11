@@ -65,6 +65,6 @@ include './header.php';?>
         }
         else if(!$('.chkbox-label').hasClass('dark')){
             loaded_img.removeClass('dark');
-        }      
+        }
     });
 </script>
