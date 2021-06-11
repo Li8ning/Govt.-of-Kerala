@@ -211,7 +211,7 @@ include './header.php'; ?>
                         </div>
                         <div class="row align-items-center justify-content-center" id="cm-details">
                             <div class="col-3 col-lg-4 image-gov-cm">
-                                <img class="img-fluid" src="./assets/img/cm-pinaraayi.png">
+                                <img class="img-fluid" src="./assets/img/cm-website-01.png">
                             </div>
                             <div class="col-7 col-lg-8 gov-info pe-0">
                                 <span class="kg-v-font font-roboto-normal">Chief Minister</span><br>
